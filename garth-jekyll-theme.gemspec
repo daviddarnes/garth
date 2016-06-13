@@ -1,8 +1,9 @@
 Gem::Specification.new do |s|
-  s.name     = 'Garth Jekyll Theme'
-  s.version  = '0.1.0'
+  s.name     = 'garth'
+  s.version  = '0.1.1'
   s.license  = 'MIT'
   s.summary  = 'An experimental theme for Jekyll'
+  s.description  = 'An experimental theme for Jekyll, just to test this out'
   s.author   = 'David Darnes'
   s.email    = 'me@daviddarnes.com'
   s.homepage = 'https://github.com/daviddarnes/garth-jekyll-theme'
