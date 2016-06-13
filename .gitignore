@@ -3,3 +3,4 @@ _site/
 .jekyll-metadata
 garth-jekyll-theme-*.gem
 index.html
+test-site/*
