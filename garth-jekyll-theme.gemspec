@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = 'garth-jekyll-theme'
-  s.version  = '0.1.4'
+  s.version  = '0.1.5'
   s.license  = 'MIT'
   s.summary  = 'An experimental theme for Jekyll'
   s.description  = 'An experimental theme for Jekyll, just to test this out'
