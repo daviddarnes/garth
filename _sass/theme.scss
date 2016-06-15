@@ -1,13 +1,8 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+// Imports
+@import "variables";
+@import "type";
 
+// Layout
 body {
   margin: 0;
-}
-
-h1 {
-  margin-top: 0;
 }
