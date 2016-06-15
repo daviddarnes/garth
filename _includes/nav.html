@@ -1,0 +1,14 @@
+<nav class="nav">
+  <button class="button  button--nav">Menu</button>
+  {% if data.nav %}
+    {% for item in data.nav %}
+      <a href="{{ item.url }}" title="{{ item.name }}">{{ item.name }}</a>
+    {% endfor %}
+  {% else %}
+    {% for page in site.pages %}
+      {% if page.title %}
+        <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</nav>
