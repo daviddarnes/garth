@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<head>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<html>
-  <h1>Hello world</h1>
-  {{ content }}
+<html lang="en-GB">
+	<head>
+		<!-- General meta -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+
+		{% if site.logo %}
+      {% include favicons.html %}
+    {% endif %}
+
+		<link href="/css/styles.css" media="all" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		{{ content }}
+
+	</body>
 </html>

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<main class="container">
+
+	{% include header.html %}
+
+	<article class="content">
+
+		<small class="small">
+				{% assign words = content | number_of_words %}
+				<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>&nbsp;&nbsp;–&nbsp;&nbsp;<span class="time  time--reading">{{ words | divided_by:180 }} minute read</span>
+		</small>
+
+		{{ content }}
+
+	</article>
+
+	{% include footer.html %}
+
+</main>

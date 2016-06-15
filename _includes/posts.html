@@ -1,0 +1,22 @@
+	<ul class="posts">
+		{% for item in paginator.posts %}
+
+			<li class="post">
+
+				<article class="container">
+
+					<h2>
+						<a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+					</h2>
+
+					<small class="small">
+						<time datetime="{{ item.date | date_to_xmlschema }}" class="time">{{ item.date | date_to_string }}</time>
+					</small>
+
+					{{ item.excerpt | markdownify }}
+
+				</article>
+			</li>
+
+		{% endfor %}
+	</ul>
