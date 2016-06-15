@@ -1,5 +1,7 @@
 # garth-jekyll-theme
+
 [![Gem Version](https://badge.fury.io/rb/garth-jekyll-theme.svg)](https://badge.fury.io/rb/garth-jekyll-theme)
+
 An experimental theme for Jekyll
 
 ## Installtion
