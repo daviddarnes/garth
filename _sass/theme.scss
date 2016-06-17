@@ -1,8 +1,24 @@
 // Imports
-@import "variables";
-@import "type";
+@import "bourbon/bourbon";
+@import "base/base";
 
-// Layout
+// Theme variables
+$color--background: #ffefc8;
+$color--foreground: #150301;
+$color--accent: #5277c3;
+
+// Theme typography
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  margin: 0;
+  color: $color--foreground;
+  background: $color--background;
+}
+
+a {
+  color: $color--accent;
 }
