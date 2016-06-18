@@ -1,5 +1,6 @@
 // Imports
 @import "bourbon/bourbon";
+@import "neat/neat";
 @import "base/base";
 
 // Theme variables
@@ -21,4 +22,9 @@ body {
 
 a {
   color: $color--accent;
+}
+
+// Theme layout
+.container {
+  @include outer-container;
 }
