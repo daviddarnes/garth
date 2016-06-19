@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<main class="container">
+<main class="main  container">
 
-	{% include header.html %}
+	<article class="article  typeset">
 
-	<article class="content">
+		<h1>{{ page.title }}</h1>
 
 		{{ content }}
 
@@ -15,7 +15,5 @@ layout: default
 	{% include posts.html %}
 
 	{% include pagination.html %}
-
-	{% include footer.html %}
 
 </main>

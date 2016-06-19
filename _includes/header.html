@@ -1,16 +1,32 @@
 <header class="header">
 
-	<a href="{{ page.url }}" title="{{ page.title }}">
-
-			<img class="avatar" src="{{ site.logo | replace: "300", "72" }}" alt="{{ site.title }}" srcset="{{ site.logo | replace: "300", "72" }}  72w, {{ site.logo | replace: "300", "144" }} 144w" width="72" height="72">
-
-	</a>
-
-	{% include nav.html %}
-
 	<div class="container">
 
-		<h1>{{ page.title }}</h1>
+		{% if site.logo %}
+		  <a class="logo" href="{{ site.url }}" title="{{ site.title }}">
+		    <img class="image" src="{{ site.logo | replace: "300", "72" }}" alt="{{ site.title }}" srcset="{{ site.logo | replace: "300", "72" }}  72w, {{ site.logo | replace: "300", "144" }} 144w" width="72" height="72">
+		  </a>
+		{% endif %}
+
+		<button class="button">Menu</button>
+
+		<nav class="nav  nav--main">
+		  {% if data.nav %}
+
+		    {% for item in data.nav %}
+		      <a class="item" href="{{ item.url }}" title="{{ item.name }}">{{ item.name }}</a>
+		    {% endfor %}
+
+		  {% else %}
+
+		    {% for page in site.pages %}
+					{% if page.title %}
+		      	<a class="item" href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+					{% endif %}
+		    {% endfor %}
+
+		  {% endif %}
+		</nav>
 
 	</div>
 

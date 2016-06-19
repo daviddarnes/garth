@@ -1,17 +1,21 @@
-<aside class="container">
+<aside class="aside">
 
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="pagination  pagination--previous">&larr; Previous</a>
-  {% else %}
-    <span class="pagination  pagination--previous">&larr; Previous</span>
-  {% endif %}
+  <nav class="paginator  container">
 
-  <span class="pagination  pagination--divider">&bull;</span>
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="pagination  pagination--previous">&larr; Previous</a>
+    {% else %}
+      <span class="pagination  pagination--previous">&larr; Previous</span>
+    {% endif %}
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="pagination  pagination--next">Next &rarr;</a>
-  {% else %}
-    <span class="pagination  pagination--next">Next &rarr;</span>
-  {% endif %}
+    <span class="pagination  pagination--divider">&bull;</span>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="pagination  pagination--next">Next &rarr;</a>
+    {% else %}
+      <span class="pagination  pagination--next">Next &rarr;</span>
+    {% endif %}
+
+  </nav>
 
 </aside>

@@ -1,30 +1,84 @@
 // Imports
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "base/base";
+@import "sassline-base";
 
-// Theme variables
-$color--background: #ffefc8;
-$color--foreground: #150301;
-$color--accent: #5277c3;
-
-// Theme typography
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
+// Layout
 body {
-  color: $color--foreground;
-  background: $color--background;
+  margin: 0;
+  background: $backgroundColour;
 }
 
-a {
-  color: $color--accent;
-}
-
-// Theme layout
 .container {
-  @include outer-container;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Header
+.header {
+  background: darken($backgroundColour, 10%);
+  border-bottom: 1px solid darken($backgroundColour, 15%);
+  .button {
+    display: none;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// Logo
+.logo {
+  padding: 10px 10px 10px 0;
+  .image {
+    max-width: 52px;
+    height: auto;
+    border-radius: 100%;
+  }
+  display: inline-block;
+  line-height: 0;
+}
+
+// Navigation
+.nav {
+  text-align: right;
+  .item {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+// Main
+.main {
+  padding-bottom: 20px;
+}
+
+// Article
+.article {
+  .small {
+    color: lighten($bodyColour, 15%);
+  }
+}
+
+// Posts
+.posts {
+  list-style: none;
+  .post {
+    padding: 0;
+  }
+}
+
+// Pagination
+.paginator {
+  text-align: center;
+  .pagination {
+    margin: 0 5px;
+  }
+}
+
+// Footer
+.footer {
+  padding: 20px 0;
+  border-top: 1px solid darken($backgroundColour, 10%);
 }
