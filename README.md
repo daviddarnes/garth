@@ -10,7 +10,7 @@ An experimental theme for Jekyll
 2. `gem install github-pages`
 3. `gem install jekyll -v 3.2.0.pre.beta1`
 4. Add the following to your config file:
-  ```
+  ``` yml
   theme: garth-jekyll-theme # Set the theme
   logo: https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=300 # Provide an avatar/logo
   color: "#ffffff" # Set a theme color
