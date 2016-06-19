@@ -2,7 +2,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/garth-jekyll-theme.svg)](https://badge.fury.io/rb/garth-jekyll-theme)
 
-An experimental theme for Jekyll
+A stupidly simple theme for Jekyll (3.2)
+
+![Screenshot](https://raw.githubusercontent.com/daviddarnes/garth-jekyll-theme/master/screenshot.png)
 
 ## Installtion
 
