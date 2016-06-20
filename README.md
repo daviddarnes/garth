@@ -27,4 +27,16 @@ A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementa
   title: "Website title"
   description: "Website description"
   ```
+5. Add the following to your `css/styles.scss` file:
+  ``` css
+  ---
+  ---
+  @import "theme";
+  ```
+6. Add the following to your `js/scripts.js` file:
+  ``` html
+  ---
+  ---
+  {% include theme.js %}
+  ```
 5. `$ jekyll _3.2.0.pre.beta1_ serve --watch`
