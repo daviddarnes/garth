@@ -6,3 +6,5 @@ description: "Write an awesome description for your new site here. It will appea
 collections:
   posts:
     permalink: /posts/:title
+
+logo: https://avatars3.githubusercontent.com/u/1177460?v=3&s=300
