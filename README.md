@@ -9,24 +9,16 @@ A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementa
 ## Installation
 
 1. `$ gem install garth-jekyll-theme`
-2. `$ gem install github-pages`
-3. `$ gem install jekyll -v 3.2.0.pre.beta1`
-4. Add the following to your config file:
+2. `$ gem install jekyll`
+3. Add the following to your config file:
   
   ``` yml
-  theme: garth-jekyll-theme # Set the theme
-  logo: https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=300 # Provide an avatar/logo
-  color: "#ffffff" # Set a theme color
-  paginate: 8 # Set a pagination number for jekyll-paginate
-
-  # Required gems
-  gems:
-    - jekyll-seo-tag # Allow the use of {% seo %} on all pages and posts
-    - jekyll-paginate # Add post pagination
-
   # Typical site settings
   title: "Website title"
   description: "Website description"
+  logo: https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=300 # Provide an avatar/logo
+
+  theme: garth-jekyll-theme # Set the theme
   ```
 
 5. Add the following to your `css/styles.scss` file:
@@ -45,4 +37,12 @@ A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementa
   {% include theme.js %}
   ```
   
-7. `$ jekyll _3.2.0.pre.beta1_ serve --watch`
+7. `$ jekyll serve --watch`
+
+## Additional notes
+
+There's 3 templates within the theme:
+
+- `front.html`: For blog homepage, you'll need `jekyll-paginate` to paginate posts in your blog
+- `page.html`: For pages
+- `post.html`: For blog posts
