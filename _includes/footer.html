@@ -2,7 +2,7 @@
 
 	<div class="container">
 
-		<small class="small">&copy; {{ site.time | date: '%Y' }}&nbsp;–&nbsp;{{ site.title }}</small>
+		<small class="small">&copy; {{ site.time | date: '%Y' }}&nbsp;–&nbsp;{% if site.title %}{{ site.title }}{% else %}Garth by <a href="https://darn.es/" title="David Darnes">David Darnes</a></small>
 
 	</div>
 
