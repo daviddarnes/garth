@@ -1,22 +1,22 @@
-	<ul class="posts">
-		{% for item in paginator.posts %}
+<ul class="posts">
+	{% for item in site.posts %}
 
-			<li class="post  container">
+		<li class="post  container">
 
-				<article class="article  typeset">
+			<article class="article  typeset">
 
-					<h2>
-						<a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
-					</h2>
+				<h2>
+					<a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+				</h2>
 
-					<small class="small">
-						<time datetime="{{ item.date | date_to_xmlschema }}" class="time">{{ item.date | date_to_string }}</time>
-					</small>
+				<small class="small">
+					<time datetime="{{ item.date | date_to_xmlschema }}" class="time">{{ item.date | date_to_string }}</time>
+				</small>
 
-					{{ item.excerpt | markdownify }}
+				{{ item.excerpt | markdownify }}
 
-				</article>
-			</li>
+			</article>
+		</li>
 
-		{% endfor %}
-	</ul>
+	{% endfor %}
+</ul>
