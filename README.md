@@ -8,10 +8,10 @@ A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementa
 
 ## Installation
 
-1. `$ gem install garth-jekyll-theme`
-2. `$ gem install jekyll`
+1. `$ gem install jekyll`
+2. `$ gem install garth-jekyll-theme`
 3. Add the following to your config file:
-  
+
   ``` yml
   # Typical site settings
   title: "Website title"
@@ -28,7 +28,7 @@ A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementa
   ---
   @import "theme";
   ```
-  
+
 6. Add the following to your `js/scripts.js` file:
 
   ``` html
@@ -36,7 +36,7 @@ A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementa
   ---
   {% include theme.js %}
   ```
-  
+
 7. `$ jekyll serve --watch`
 
 ## Additional notes
