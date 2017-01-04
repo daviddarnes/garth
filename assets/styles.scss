@@ -24,7 +24,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -49,12 +49,15 @@ body {
 }
 
 .header {
+  @include flex(0, 0, auto);
   background: darken($color__site--background, 10%);
 }
 
 .logo {
   display: inline-block;
   line-height: 0;
+  border-radius: 100%;
+  overflow: hidden;
   img {
     width: 4rem;
     height: 4rem;
@@ -69,12 +72,6 @@ body {
 
 .footer {
   border-top: 1px solid darken($color__site--background, 15%);
-  a {
-    color: invert($color__site--heading);
-    &:hover {
-      color: lighten(invert($color__site--body), 15%);
-    }
-  }
 }
 
 
@@ -82,20 +79,14 @@ body {
 .nav {
   &--paginator {
     @include flexbox;
-    @include justify-content(space-between);
+    @include justify-content(center);
     color: $color__site--captions;
     text-align: center;
   }
 }
 
 .pagination {
-  min-width: 20%;
-}
-
-.copyright {
-  @include breakpoint(break-1) {
-    @include order(-1);
-  }
+  margin: 0 1rem;
 }
 
 
@@ -103,20 +94,11 @@ body {
 .main {
   @include flexbox;
   @include flex-direction(column);
+  @include flex(1, 0, auto);
   margin-bottom: 1.6rem;
   @include breakpoint(break-1) {
     @include flex-direction(row);
   }
-}
-
-.main {
-  @include flex(1, 0, auto);
-}
-
-.header,
-.feature,
-.footer {
-  @include flex(0, 0, auto);
 }
 
 
@@ -149,29 +131,11 @@ body {
 }
 
 
-// Links, icons and images
-.link {
-  display: inline-block;
-  margin: .2rem;
-}
-
-.icon {
-  vertical-align: middle;
-  width: 1em;
-  height: 1em;
-  fill: CurrentColor;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-}
-
+// Images and media elements
 img {
   max-width: 100%;
   height: auto;
 }
-
 
 audio,
 video {
@@ -179,82 +143,13 @@ video {
 }
 
 
-// Form elements and buttons
-button,
-input[type="text"],
-input[type="email"],
-input[type="submit"],
-textarea {
-  padding: .6rem 1.2rem;
-  margin-bottom: .6rem;
-  transition: color .1s, background-color .1s, border .1s;
-  line-height: inherit;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  -webkit-appearance: none;
-  &:focus {
-    outline: solid .2rem invert($color__site--accent);
-  }
-  .icon {
-    margin: 0 0 .35rem;
-  }
-}
-
-input[type="submit"],
-button {
-  cursor: pointer;
-  display: inline-block;
-  background: $color__site--accent;
-  position: relative;
-  transition: box-shadow .1s;
-  will-change: box-shadow;
-  box-shadow: inset 0 0 0 2rem transparent;
-  &:hover {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.2);
-  }
-  &:active,
-  &:focus {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.4);
-  }
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  border: 1px solid $color__site--captions;
-  &:hover {
-    border-color: darken($color__site--captions, 20%);
-  }
-}
-
-textarea {
-    resize: vertical;
-}
-
-label {
-  @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
-}
-
-::-webkit-input-placeholder {
-  color: darken($color__site--captions, 30%);
-}
-::-moz-placeholder {
-  color: darken($color__site--captions, 30%);
-}
-:-ms-input-placeholder {
-  color: darken($color__site--captions, 30%);
-}
-:-moz-placeholder {
-  color: darken($color__site--captions, 30%);
-}
-
+// Text selection
 ::selection {
   background: $color__site--heading;
   color: $color__site--background;
   text-shadow: none;
 }
+
 
 // Sassline overrides
 .typeset {

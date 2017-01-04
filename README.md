@@ -1,7 +1,7 @@
 # [Garth](https://garth.darn.es/)
 [![Gem Version](https://badge.fury.io/rb/garth-jekyll-theme.svg)](https://badge.fury.io/rb/garth-jekyll-theme)
 
-A stupidly simple theme for Jekyll, using the official Jekyll theme implementation.
+🥁 A stupidly simple theme for Jekyll, using the official Jekyll theme implementation.
 
 ![Screenshot](https://raw.githubusercontent.com/daviddarnes/garth-jekyll-theme/master/screenshot.png)
 
@@ -38,9 +38,9 @@ You'll need to change the `description`, `title` and `url` to match with the pro
 
 ## Page layouts
 
-`page`, `post` and `home` (acts as the font page blog).
+There are 3 layouts; `page`, `post` and `home` (home acts as the font page blog).
 
-> **Note:** The Post List Page options are actually in the collection data within the `_config.yml` file.
+> **Note:** The Post List Page options are actually in the collection data within the `_config.yml` file, this is so they can be edited with CMSs such as [Siteleaf](https://siteleaf.com)
 
 ## Credits
 

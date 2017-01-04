@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<!-- General meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		{% if page.collectionpage %}
 			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
 			<title>{{ collectiondata.title }} - {{ site.title }}</title>
@@ -12,11 +10,9 @@
 		{% endif %}
 
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
-
-		{% include site-favicons.html %}
+		<link rel="shortcut icon" href="{{ site.logo }}">
 	</head>
 	<body>
-		{% include site-icons.svg %}
 
 		{{ content }}
 
