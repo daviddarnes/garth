@@ -1,0 +1,16 @@
+<nav class="nav">
+  <ul class="list list--nav">
+    {% for item in site.pages %}
+      {% unless item.url contains ".css" or item.url contains "/page" or item.url contains "/404.html" %}
+        <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
+          {% if item.collectionpage %}
+      			{% assign collectiondata = site.collections | where: "label", item.collectionpage | first %}
+      			<a href="{{ item.url }}">{{ collectiondata.title }}</a>
+      		{% else %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+      		{% endif %}
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</nav>

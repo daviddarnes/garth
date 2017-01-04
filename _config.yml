@@ -15,16 +15,16 @@ exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
+- demo/*
+- garth-jekyll-theme.gemspec
 
 # 2. Installed Gems
 gems:
 - jekyll-paginate
 
-theme: garth-jekyll-theme
-
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
+paginate_path: page:num # jekyll-paginate > blog page
 
 # 4. Jekyll settings
 sass:

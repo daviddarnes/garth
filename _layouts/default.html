@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<!-- General meta -->
-		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>{{ page.title }} - {{ site.title }}</title>
-		
-		{% if site.logo %}
-			{% include favicons.html %}
+		{% if page.collectionpage %}
+			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+			<title>{{ collectiondata.title }} - {{ site.title }}</title>
+		{% else %}
+			<title>{{ page.title }} - {{ site.title }}</title>
 		{% endif %}
 
-		<link href="/css/styles.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+		<link rel="shortcut icon" href="{{ site.logo }}">
 	</head>
 	<body>
 
-		{% include header.html %}
-
 		{{ content }}
 
-		{% include footer.html %}
-
 		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Neuton" rel="stylesheet">
-		<script src="/js/scripts.js" type="text/javascript"></script>
 	</body>
 </html>

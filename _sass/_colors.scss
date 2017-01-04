@@ -1,0 +1,9 @@
+// Colours
+$color__site--background: #ffefc8;
+$color__site--heading: darken(#46412A, 5%);
+$color__site--body: #46412A;
+$color__site--captions: lighten($color__site--heading, 40%);
+$color__site--link: #5B5BFF;
+$color__site--link--hover: darken($color__site--link, 10%);
+$color__site--link--current: desaturate($color__site--link, 100%);
+$color__site--accent: #5B5BFF;
