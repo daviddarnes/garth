@@ -38,7 +38,7 @@ collections:
   posts:
     title: Welcome # Needed for Siteleaf
     output: true
-    description: "Welcome to my blog!" # The post list page content
+    description: "This is just a demo, find out more [about Garth](/about/)" # The post list page content
 
 # 6. Jekyll collections settings
 defaults:
