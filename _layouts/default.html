@@ -4,17 +4,11 @@
 		<!-- General meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		{% if page.indexing == false %}
-			<meta name="robots" content="noindex">
-		{% endif %}
-
-		{% if page.collection %}
-			{% seo title=false %}
-
-			{% assign collectiondata = site.collections | where: "label", page.collection | first %}
+		{% if page.collectionpage %}
+			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
 			<title>{{ collectiondata.title }} - {{ site.title }}</title>
 		{% else %}
-			{% seo %}
+			<title>{{ page.title }} - {{ site.title }}</title>
 		{% endif %}
 
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
@@ -26,5 +20,6 @@
 
 		{{ content }}
 
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Neuton" rel="stylesheet">
 	</body>
 </html>

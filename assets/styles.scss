@@ -48,20 +48,8 @@ body {
   }
 }
 
-.feature {
-  padding-bottom: .4rem;
-  margin-bottom: 1.6rem;
-  text-align: center;
-  background: $color__site--accent;
-  background-size: cover;
-  background-position: center;
-  @include flexbox;
-  .container {
-    min-height: 35vh;
-    max-width: 60%;
-    @include flex-direction(column);
-    @include justify-content(center);
-  }
+.header {
+  background: darken($color__site--background, 10%);
 }
 
 .logo {
@@ -80,7 +68,7 @@ body {
 }
 
 .footer {
-  background: lighten(invert($color__site--background), 15%);
+  border-top: 1px solid darken($color__site--background, 15%);
   a {
     color: invert($color__site--heading);
     &:hover {
@@ -97,9 +85,6 @@ body {
     @include justify-content(space-between);
     color: $color__site--captions;
     text-align: center;
-  }
-  &--social {
-    text-align: left;
   }
 }
 
@@ -132,41 +117,6 @@ body {
 .feature,
 .footer {
   @include flex(0, 0, auto);
-}
-
-.content {
-  width: 100%;
-  @include breakpoint(break-1) {
-    width: 62%;
-    margin-right: 4%;
-    &--full {
-      width: 100%;
-      margin-right: 0%;
-      .figure--full {
-        left: 50%;
-      }
-    }
-    &--aside-left {
-      margin-right: 0;
-      margin-left: 4%;
-      @include order(2);
-      .figure--full {
-        left: 19.4%;
-      }
-    }
-  }
-}
-
-.aside {
-  max-width: 100%;
-  @include breakpoint(break-1) {
-    max-width: 34%;
-    opacity: 0.5;
-    transition: opacity .1s;
-    &:hover {
-      opacity: 1;
-    }
-  }
 }
 
 
@@ -203,15 +153,6 @@ body {
 .link {
   display: inline-block;
   margin: .2rem;
-  .icon {
-    display: inline-block;
-    transition: fill .1s;
-    min-width: 24px;
-    min-height: 24px;
-    &:hover {
-      fill: darken($color__site--link, 10%);
-    }
-  }
 }
 
 .icon {
@@ -231,57 +172,6 @@ img {
   height: auto;
 }
 
-.figure {
-  line-height: 0;
-  &--full {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    .caption {
-      padding-left: .8rem;
-      padding-right: .8rem;
-    }
-  }
-  @include breakpoint(break-1) {
-    &--full {
-      left: 80.6%;
-    }
-    &--left {
-      float: left;
-      padding-right: .8rem;
-    }
-    &--right {
-      float: right;
-      padding-left: .8rem;
-    }
-  }
-}
-
-// Video and map embeds
-.video,
-.map {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.map {
-  padding-bottom: 70%;
-}
-
-.figure,
-.video,
-.map {
-  margin-bottom: .8rem;
-}
 
 audio,
 video {
@@ -291,7 +181,6 @@ video {
 
 // Form elements and buttons
 button,
-.button,
 input[type="text"],
 input[type="email"],
 input[type="submit"],
@@ -313,8 +202,7 @@ textarea {
 }
 
 input[type="submit"],
-button,
-.button {
+button {
   cursor: pointer;
   display: inline-block;
   background: $color__site--accent;
@@ -347,10 +235,6 @@ textarea {
 
 label {
   @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
-}
-
-.required {
-  color: red;
 }
 
 ::-webkit-input-placeholder {
