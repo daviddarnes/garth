@@ -59,5 +59,5 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 title: "Garth" # Site name or title
 logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=500" # Site logo
-description: "A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementation" # Site description and default description
+description: "A stupidly simple theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
 url: "https://garth.darn.es" # Site url
