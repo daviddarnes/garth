@@ -24,7 +24,7 @@ gems:
 
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
+paginate_path: page:num # jekyll-paginate > blog page
 
 # 4. Jekyll settings
 sass:
@@ -36,9 +36,9 @@ timezone: Europe/London # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    title: Welcome # Needed for Siteleaf
     output: true
-    description: "My thoughts and ideas" # The post list page content
+    description: "Welcome to my blog!" # The post list page content
 
 # 6. Jekyll collections settings
 defaults:
@@ -57,7 +57,7 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-title: "Garth" # Site name or title, also used in jekyll-seo-tag
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=300" # Site logo, also used in jekyll-seo-tag
-description: "A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementation" # Site description and default description, also used in jekyll-seo-tag
-url: "https://garth.darn.es" # Site url, also used in jekyll-seo-tag
+title: "Garth" # Site name or title
+logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=500" # Site logo
+description: "A stupidly simple theme for Jekyll (3.2), using official Jekyll theme implementation" # Site description and default description
+url: "https://garth.darn.es" # Site url

@@ -1,16 +1,20 @@
 ---
-title: History of the Alembic
-category: General
-feature_text: |
-  The History of the Alembic tool
+title: Who is Mike Myers?
+category: People
 ---
 
-Dioscorides' ambix (described in his De materia medica) is a helmet-shaped lid for gathering condensed mercury. For Athenaeus (~ 225 C.E.) it is a bottle or flask. For later chemists it denotes various parts of crude distillation devices.
+Michael John "Mike" Myers (born May 25, 1963) is a Canadian-born actor, comedian, screenwriter, and film producer, who also holds UK and US citizenship.[1] He is known for his run as a featured performer on Saturday Night Live from 1989 to 1995, and for playing the title roles in the Wayne's World, Austin Powers, and Shrek films. He also directed the documentary film Supermensch: The Legend of Shep Gordon, and had a small role in Quentin Tarantino's Inglourious Basterds in 2009.
 
 <!-- more -->
 
-Alembic drawings appear in works of Cleopatra the Alchemist, Synesius, and Zosimos of Panopolis. There were alembics with two (dibikos) and three (tribikos) receivers.[4] According to Zosimos of Panopolis, the alembic was invented by Mary the Jewess.[5]
+Myers was born on May 25, 1963 in Scarborough, Ontario, the son of English-born parents Eric Myers (1922–1991), an insurance agent, and his wife, Alice E. (née Hind; born 1926), an office supervisor and a veteran of the Royal Air Force.
 
-The anbik is described by Ibn al-Awwam in his Kitab al-Filaha (Book of Agriculture), where he explains how rose-water is distilled. Amongst others, it is mentioned in the Mafatih al-Ulum (Key of Sciences) of Khwarizmi and the Kitab al-Asrar (Book of Secrets) of Al-Razi. Some illustrations occur in the Latin translations of works which are attributed to Geber.[2]
+Both his parents were from Liverpool and he has two older brothers, Paul, an indie rock singer-songwriter, broadcaster and author, and Peter, a Sears Canada employee.
 
-_Originally from [Alembic - Wikipedia](https://en.wikipedia.org/wiki/Alembic)_
+The family is of English, Scottish and Irish ancestry. Myers was raised Protestant.
+
+Myers reportedly holds Canadian, U.S. and British citizenship.
+
+Myers grew up in North York and then Scarborough, where he attended Sir John A. MacDonald Collegiate Institute and then graduated from Stephen Leacock Collegiate Institute in 1982.
+
+_Originally from [Mike Myers - Wikipedia](https://en.wikipedia.org/wiki/Mike_Myers)_
