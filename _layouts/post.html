@@ -2,19 +2,24 @@
 layout: default
 ---
 
+{% include site-header.html %}
+
 <main class="main  container">
 
-	<article class="article  typeset">
+	<article class="article  article--post  content  typeset">
 
-		<h1>{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
+		{% include post-meta.html %}
+    {{ content }}
 
-		<small class="small">
-				{% assign words = content | number_of_words %}
-				<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>&nbsp;–&nbsp;<span class="time  time--reading">{{ words | divided_by:180 }} minute read</span>
-		</small>
+		{% include post-share-buttons.html %}
+		
+		{% include post-comments.html %}
 
-		{{ content }}
+  </article>
 
-	</article>
+  {% include site-aside.html %}
 
 </main>
+
+{% include site-footer.html %}
