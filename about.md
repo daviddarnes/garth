@@ -12,7 +12,7 @@ A stupidly simple theme for Jekyll, using the official Jekyll theme implementati
 
 ### As a Fork
 
-1. [Fork the repo](https://github.com/daviddarnes/garth-#fork-destination-box)
+1. [Fork the repo](https://github.com/daviddarnes/garth#fork-destination-box)
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
 3. Delete the `demo/` folder and `screenshot.png` files
 4. Change the `CNAME` record to your projects' record
