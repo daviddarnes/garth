@@ -3,7 +3,7 @@
 
 🥁 A stupidly simple theme for Jekyll, using the official Jekyll theme implementation.
 
-![Screenshot](https://raw.githubusercontent.com/daviddarnes/garth-jekyll-theme/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/daviddarnes/garth/master/screenshot.png)
 
 ## Contents
 - [Installation](#installation)
@@ -15,7 +15,7 @@
 
 ### As a Fork
 
-1. [Fork the repo](https://github.com/daviddarnes/garth-jekyll-theme#fork-destination-box)
+1. [Fork the repo](https://github.com/daviddarnes/garth#fork-destination-box)
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
 3. Delete the `demo/` folder and `screenshot.png` files
 4. Change the `CNAME` record to your projects' record
@@ -26,7 +26,7 @@
 
 ### As a Jekyll 3.3 theme gem
 
-1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/garth-jekyll-theme/tree/master/demo)
+1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/garth/tree/master/demo)
 2. Install bundler with `$ gem install bundler`
 3. Install gems with `$ bundle install`
 4. Run Jekyll with `$ bundle exec jekyll serve --watch`
