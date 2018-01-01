@@ -139,27 +139,35 @@ video {
 
 // Sassline overrides
 .typeset {
+  a > code {
+    text-shadow: none;
+  }
   .button,
   button {
     background-image: none;
     text-shadow: none;
-    color: lighten(invert($bodyColour), 15%);
+    color: $backgroundColour;
     &:hover,
     &:active,
     &:focus {
       background-image: none;
-      color: lighten(invert($bodyColour), 15%);
+      color: $backgroundColour;
     }
   }
   hr {
     width: 100%;
   }
   li {
-    margin-bottom: .3em;
     > p {
       padding: 0;
       margin: 0;
     }
+  }
+  .nav a {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: .2rem;
+    margin-right: .2rem;
   }
   pre {
     white-space: pre;
