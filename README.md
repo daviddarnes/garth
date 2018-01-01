@@ -7,30 +7,48 @@
 
 ## Contents
 - [Installation](#installation)
+- [Customising](#customising)
 - [Site settings](#site-settings)
 - [Page layouts](#page-layouts)
 - [Credits](#credits)
 
 ## Installation
 
-### As a Fork
+### As a Jekyll theme
+
+1. Add `gem "garth-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
+2. Run the command `bundle install` in the root of project to install the theme and its dependancies
+3. Add `theme: garth-jekyll-theme` to your `_config.yml` file to set the site theme
+4. Run `bundle exec jekyll serve` to build and serve your site
+5. Done! Use the example [`_config.yml`](https://github.com/daviddarnes/garth/blob/master/_config.yml) file to set site-wide options
+
+### As a GitHub Pages remote theme
+
+1. Add `gem "jekyll-remote-theme"` to your `Gemfile` to add the theme as a dependancy
+2. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
+3. Add `jekyll-remote-theme` to the list of `plugins` in your `_config.yml` file
+4. Add `remote_theme: daviddarnes/garth` to your `_config.yml` file to set the site theme
+5. Run `bundle exec jekyll serve` to build and serve your site
+6. Done! Use the example [`_config.yml`](https://github.com/daviddarnes/garth/blob/master/_config.yml) file to set site-wide options
+
+### As a Boilerplate / Fork
+
+_(deprecated, not recommended)_
 
 1. [Fork the repo](https://github.com/daviddarnes/garth#fork-destination-box)
-2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
-3. Delete the `demo/` folder and `screenshot.png` files
-4. Change the `CNAME` record to your projects' record
-5. Install bundler with `$ gem install bundler`
-6. Install gems with `$ bundle install`
-7. Run Jekyll with `$ bundle exec jekyll serve --watch`
-8. Begin hacking for your project
+2. Replace the `Gemfile` with one stating all the gems used in your project
+3. Delete the following unnecessary files/folders: `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`, `CNAME` and `garth-jekyll-theme.gemspec`
+4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
+5. Run `bundle exec jekyll serve` to build and serve your site
+6. Done! Use the example [`_config.yml`](https://github.com/daviddarnes/garth/blob/master/_config.yml) file to set site-wide options
 
-### As a Jekyll 3.3 theme gem
+## Customising
 
-1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/garth/tree/master/demo)
-2. Install bundler with `$ gem install bundler`
-3. Install gems with `$ bundle install`
-4. Run Jekyll with `$ bundle exec jekyll serve --watch`
-5. Begin hacking for your project
+When using Garth as a theme means you can take advantage of the file overriding method. This allows you to overwrite any file in this theme with your own custom file, simply by matching the file name and path. The most common example of this would be if you want to add your own styles or change the core style settings.
+
+To add your own styles copy the [`styles.scss`](https://github.com/daviddarnes/garth/blob/master/assets/styles.scss) into your own project with the same file path (`assets/styles.scss`). From there you can add your own styles, you can even optionally ignore the theme styles by removing the `@import "garth";` line.
+
+If you're just looking to set your own colours copy the [`_colors.scss`](https://github.com/daviddarnes/garth/blob/master/_sass/_colors.scss) file into your project at the same file path (`_sass/_settings.scss`) and change variables however you wish. The settings are a mixture of custom variables and settings from [Sassline](https://medium.com/@jakegiltsoff/sassline-v2-0-e424b2881e7e) - follow the link to find out how to configure the typographic settings.
 
 ## Site settings
 

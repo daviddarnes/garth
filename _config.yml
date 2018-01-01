@@ -10,16 +10,17 @@
 # 1. Files excluded from Jekyll builds
 exclude:
 - README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
 - screenshot.png
 - LICENSE
 - CNAME
 - Gemfile
 - Gemfile.lock
-- demo/*
 - garth-jekyll-theme.gemspec
 
 # 2. Installed Gems
-gems:
+plugins:
 - jekyll-paginate
 
 # 3. Gem settings
@@ -36,9 +37,9 @@ timezone: Europe/London # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Welcome # Needed for Siteleaf
+    title: Blog # Needed for Siteleaf
     output: true
-    description: "This is just a demo, find out more [about Garth](/about/)" # The post list page content
+    description: "This is just a demo, find out more [about Garth](about)" # The post list page content
 
 # 6. Jekyll collections settings
 defaults:
@@ -58,6 +59,8 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 title: "Garth" # Site name or title
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=500" # Site logo
+logo: "/assets/logo.svg" # Site logo
 description: "A stupidly simple theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
 url: "https://garth.darn.es" # Site url
+baseurl: "/toast"
+lang: en-GB

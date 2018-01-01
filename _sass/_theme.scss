@@ -1,0 +1,168 @@
+// Structural elements
+body {
+  background: $backgroundColour;
+  color: $bodyColour;
+  height: 100%;
+  display: flex;
+  @include flex-direction(column);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+// Header, feature and footer
+.header,
+.footer {
+  .container {
+    padding: 1rem 0;
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+    text-align: center;
+  }
+  @include breakpoint(break-1) {
+    .container {
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      text-align: inherit;
+    }
+  }
+}
+
+.header {
+  @include flex(0, 0, auto);
+  background: darken($backgroundColour, 10%);
+}
+
+.logo {
+  display: inline-block;
+  line-height: 0;
+  border-radius: 100%;
+  overflow: hidden;
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.small {
+  padding-top: .6rem;
+  color: $captionColour;
+  display: inline-block;
+}
+
+.footer {
+  border-top: 1px solid darken($backgroundColour, 15%);
+}
+
+
+// Nav and copyright
+.nav {
+  &--paginator {
+    @include flexbox;
+    @include justify-content(center);
+    color: $captionColour;
+    text-align: center;
+  }
+}
+
+.pagination {
+  margin: 0 1rem;
+}
+
+
+// Main content
+.main {
+  @include flexbox;
+  @include flex-direction(column);
+  @include flex(1, 0, auto);
+  margin-bottom: 1.6rem;
+  @include breakpoint(break-1) {
+    @include flex-direction(row);
+  }
+}
+
+
+// Lists
+.list {
+  &--posts {
+    list-style: none;
+  }
+  &--nav {
+    list-style: none;
+  }
+  .item--post {
+    margin-left: 0;
+  }
+}
+
+.item {
+  &--nav {
+    display: inline-block;
+    margin-left: 1rem;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  &--current {
+    a {
+      color: desaturate($linkColour, 100%);
+    }
+  }
+}
+
+
+// Images and media elements
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+audio,
+video {
+  width: 100%;
+}
+
+
+// Text selection
+::selection {
+  background: $headingColour;
+  color: $white;
+  text-shadow: none;
+}
+
+
+// Sassline overrides
+.typeset {
+  .button,
+  button {
+    background-image: none;
+    text-shadow: none;
+    color: lighten(invert($bodyColour), 15%);
+    &:hover,
+    &:active,
+    &:focus {
+      background-image: none;
+      color: lighten(invert($bodyColour), 15%);
+    }
+  }
+  hr {
+    width: 100%;
+  }
+  li {
+    margin-bottom: .3em;
+    > p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  pre {
+    white-space: pre;
+    overflow-x: scroll;
+  }
+}
