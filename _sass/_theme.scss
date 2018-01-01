@@ -154,4 +154,8 @@ video {
   hr {
     width: 100%;
   }
+  pre {
+    white-space: pre;
+    overflow-x: scroll;
+  }
 }
