@@ -63,3 +63,4 @@ logo: "/assets/logo.svg" # Site logo
 description: "A stupidly simple theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
 url: "https://garth.darn.es" # Site url
 baseurl: "/toast"
+lang: en-GB
