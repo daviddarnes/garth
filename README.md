@@ -7,6 +7,7 @@
 
 ## Contents
 - [Installation](#installation)
+- [Customising](#customising)
 - [Site settings](#site-settings)
 - [Page layouts](#page-layouts)
 - [Credits](#credits)
@@ -40,6 +41,14 @@ _(deprecated, not recommended)_
 4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
 5. Run `bundle exec jekyll serve` to build and serve your site
 6. Done! Use the example [`_config.yml`](https://github.com/daviddarnes/garth/blob/master/_config.yml) file to set site-wide options
+
+## Customising
+
+When using Garth as a theme means you can take advantage of the file overriding method. This allows you to overwrite any file in this theme with your own custom file, simply by matching the file name and path. The most common example of this would be if you want to add your own styles or change the core style settings.
+
+To add your own styles copy the [`styles.scss`](https://github.com/daviddarnes/garth/blob/master/assets/styles.scss) into your own project with the same file path (`assets/styles.scss`). From there you can add your own styles, you can even optionally ignore the theme styles by removing the `@import "garth";` line.
+
+If you're just looking to set your own colours copy the [`_colors.scss`](https://github.com/daviddarnes/garth/blob/master/_sass/_colors.scss) file into your project at the same file path (`_sass/_settings.scss`) and change variables however you wish. The settings are a mixture of custom variables and settings from [Sassline](https://medium.com/@jakegiltsoff/sassline-v2-0-e424b2881e7e) - follow the link to find out how to configure the typographic settings.
 
 ## Site settings
 
