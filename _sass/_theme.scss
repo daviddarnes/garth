@@ -1,7 +1,7 @@
 // Structural elements
 body {
-  background: $color__site--background;
-  color: $color__site--body;
+  background: $backgroundColour;
+  color: $bodyColour;
   height: 100%;
   display: flex;
   @include flex-direction(column);
@@ -36,7 +36,7 @@ body {
 
 .header {
   @include flex(0, 0, auto);
-  background: darken($color__site--background, 10%);
+  background: darken($backgroundColour, 10%);
 }
 
 .logo {
@@ -52,12 +52,12 @@ body {
 
 .small {
   padding-top: .6rem;
-  color: $color__site--captions;
+  color: $captionColour;
   display: inline-block;
 }
 
 .footer {
-  border-top: 1px solid darken($color__site--background, 15%);
+  border-top: 1px solid darken($backgroundColour, 15%);
 }
 
 
@@ -66,7 +66,7 @@ body {
   &--paginator {
     @include flexbox;
     @include justify-content(center);
-    color: $color__site--captions;
+    color: $captionColour;
     text-align: center;
   }
 }
@@ -111,7 +111,7 @@ body {
   }
   &--current {
     a {
-      color: $color__site--link--current;
+      color: desaturate($linkColour, 100%);
     }
   }
 }
@@ -131,8 +131,8 @@ video {
 
 // Text selection
 ::selection {
-  background: $color__site--heading;
-  color: $color__site--background;
+  background: $headingColour;
+  color: $white;
   text-shadow: none;
 }
 
@@ -143,12 +143,12 @@ video {
   button {
     background-image: none;
     text-shadow: none;
-    color: lighten(invert($color__site--body), 15%);
+    color: lighten(invert($bodyColour), 15%);
     &:hover,
     &:active,
     &:focus {
       background-image: none;
-      color: lighten(invert($color__site--body), 15%);
+      color: lighten(invert($bodyColour), 15%);
     }
   }
   hr {
