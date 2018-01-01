@@ -19,7 +19,7 @@ exclude:
 - garth-jekyll-theme.gemspec
 
 # 2. Installed Gems
-gems:
+plugins:
 - jekyll-paginate
 
 # 3. Gem settings
