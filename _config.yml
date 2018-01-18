@@ -60,6 +60,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 title: "Garth" # Site name or title
 logo: "/assets/logo.svg" # Site logo
+# favicon: "/favicon.ico" # Uncomment to add custom favicon, or leave as is to use site logo
 description: "A stupidly simple theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
 url: "https://garth.darn.es" # Site url
 baseurl: ""
