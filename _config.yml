@@ -6,6 +6,7 @@
 # 5. Collections
 # 6. Jekyll collections settings
 # 7. Site settings
+# 8. Permalink format
 
 # 1. Files excluded from Jekyll builds
 exclude:
@@ -65,3 +66,6 @@ description: "A stupidly simple theme for Jekyll, using the official Jekyll them
 url: "https://garth.darn.es" # Site url
 baseurl: ""
 lang: en-GB
+
+# 8. Permalink format (/blog/ is ignored for pages)
+permalink: /blog/:title
