@@ -5,8 +5,10 @@
 		{% if page.collectionpage %}
 			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
 			<title>{{ collectiondata.title }} - {{ site.title }}</title>
-		{% else %}
+		{% elsif page.title %}
 			<title>{{ page.title }} - {{ site.title }}</title>
+		{% else %}
+			<title>{{ site.title }}</title>
 		{% endif %}
 
 		<link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
