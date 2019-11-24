@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "garth-jekyll-theme"
-  spec.version       = "1.0.3"
+  spec.version       = "1.0.4"
   spec.authors       = ["David Darnes"]
   spec.email         = ["me@daviddarnes.com"]
 
-  spec.summary       = %q{A stupidly simple theme for Jekyll.}
-  spec.description   = "A stupidly simple theme for Jekyll, using the official Jekyll theme implementation."
+  spec.summary       = %q{A really basic theme for Jekyll.}
+  spec.description   = "A really basic theme for Jekyll, using the official Jekyll theme implementation."
   spec.homepage      = "https://garth.darn.es"
   spec.license       = "MIT"
 

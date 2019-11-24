@@ -28,7 +28,7 @@ The [Project Team](#join-the-project-team) looks forward to your contributions.~
 
 ## Request Support
 
-If you have a question about this project, how to use it, or just need clarification about something:
+If you have a question about this project, how to use it, or need clarification about something:
 
 * Open an Issue at https://github.com/daviddarnes/garth/issues
 * Provide as much context as you can about what you're running into.
@@ -51,7 +51,7 @@ If you run into an error or bug with the project:
 Once it's filed:
 
 * The project team will [label the issue](#label-issues).
-* A team member will try to reproduce the issue with your provided steps. If there are no repro steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
+* A team member will try to reproduce the issue with your provided steps. If there are no repro steps or no clear way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
 * If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](#contribute-code).
 * If you or the maintainers don't respond to an issue for 30 days, the [issue will be closed](#clean-up-issues-and-prs). If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
 * `critical` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.
@@ -93,7 +93,7 @@ And you should be ready to go!
 
 Documentation is a super important, critical part of this project. Docs are how we keep track of what we're doing, how, and why. It's how we stay on the same page about our policies. And it's how we tell others everything they need in order to be able to use this project -- or contribute to it. So thank you in advance.
 
-Documentation contributions of any size are welcome! Feel free to file a PR even if you're just rewording a sentence to be more clear, or fixing a spelling mistake!
+Documentation contributions of any size are welcome! Feel free to file a PR even if you're rewording a sentence to be more clear, or fixing a spelling mistake!
 
 To contribute documentation:
 
@@ -117,7 +117,7 @@ Once you've filed the PR:
 
 We like code commits a lot! They're super handy, and they keep the project going and doing the work it needs to do to be useful to others.
 
-Code contributions of just about any size are acceptable!
+Code contributions of any size are acceptable!
 
 The main difference between code contributions and documentation contributions is that contributing code requires inclusion of relevant tests for the code being added or changed. Contributions without accompanying tests will be held off until a test is added, unless the maintainers consider the specific tests to be either impossible, or way too much of a burden for such a contribution.
 
@@ -162,7 +162,7 @@ Some notes on picking up support issues:
 
 [Needs Collaborator](#join-the-project-team): Issue Tracker
 
-One of the most important tasks in handling issues is labelling them usefully and accurately. All other tasks involving issues ultimately rely on the issue being classified in such a way that relevant parties looking to do their own tasks can find them quickly and easily.
+One of the most important tasks in handling issues is labelling them usefully and accurately. All other tasks involving issues ultimately rely on the issue being classified in such a way that relevant parties looking to do their own tasks can find them quickly and without difficulty.
 
 In order to label issues, [open up the list of unlabelled issues](https://github.com/daviddarnes/garth/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) and, **from newest to oldest**, read through each one and apply issue labels according to the table below. If you're unsure about what label to apply, skip the issue and try the next one: don't feel obligated to label each and every issue yourself!
 
@@ -183,7 +183,7 @@ Label | Apply When | Notes
 
 [Needs Collaborator](#join-the-project-team): Issue Tracker
 
-Issues and PRs can go stale after a while. Maybe they're abandoned. Maybe the team will just plain not have time to address them any time soon.
+Issues and PRs can go stale after a while. Maybe they're abandoned. Maybe the team will not have time to address them any time soon.
 
 In these cases, they should be closed until they're brought up again or the interaction starts over.
 
@@ -211,15 +211,15 @@ Some notes:
 * You may ask for minor changes ("nitpicks"), but consider whether they are really blockers to merging: try to err on the side of "approve, with comments".
 * *ALL PULL REQUESTS* should be covered by a test: either by a previously-failing test, an existing test that covers the entire functionality of the submitted code, or new tests to verify any new/changed behaviour. All tests must also pass and follow established conventions. Test coverage should not drop, unless the specific case is considered reasonable by maintainers.
 * Please make sure you're familiar with the code or documentation being updated, unless it's a minor change (spellchecking, minor formatting, etc). You may @mention another project member who you think is better suited for the review, but still provide a non-approving review of your own.
-* Be extra kind: people who submit code/doc contributions are putting themselves in a pretty vulnerable position, and have put time and care into what they've done (even if that's not obvious to you!) -- always respond with respect, be understanding, but don't feel like you need to sacrifice your standards for their sake, either. Just don't be a jerk about it?
+* Be extra kind: people who submit code/doc contributions are putting themselves in a pretty vulnerable position, and have put time and care into what they've done (even if it's not clear to you!) -- always respond with respect, be understanding, but don't feel like you need to sacrifice your standards for their sake, either. Don't be a jerk about it, OK?
 
 ## Join the Project Team
 
 ### Ways to Join
 
-There are many ways to contribute! Most of them don't require any official status unless otherwise noted. That said, there's a couple of positions that grant special repository abilities, and this section describes how they're granted and what they do.
+There are many ways to contribute! Most of them don't require any official status unless otherwise noted. That said, there's a couple of positions that grant higher repository abilities, and this section describes how they're granted and what they do.
 
-All of the below positions are granted based on the project team's needs, as well as their consensus opinion about whether they would like to work with the person and think that they would fit well into that position. The process is relatively informal, and it's likely that people who express interest in participating can just be granted the permissions they'd like.
+All of the below positions are granted based on the project team's needs, as well as their consensus opinion about whether they would like to work with the person and think that they would fit well into that position. The process is relatively informal, and it's likely that people who express interest in participating can be granted the permissions they'd like.
 
 You can spot a collaborator on the repo by looking for the `[Collaborator]` or `[Owner]` tags next to their names.
 
