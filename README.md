@@ -14,6 +14,16 @@
 
 ## Installation
 
+### Quick setup
+
+To give you a running start I've put together some starter kits that you can download, fork or even deploy immediately:
+
+- Vanilla Jekyll starter kit:  
+  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/garth-kit)
+- Stackbit starter kit:  
+  [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/daviddarnes/garth-stackbit-kit)
+- GitHub Pages with remote theme kit - **[Download kit](https://github.com/daviddarnes/garth-kit/archive/remote-theme.zip)**
+
 ### As a Jekyll theme
 
 1. Add `gem "garth-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
