@@ -3,6 +3,8 @@
 
 🥁 A really basic theme for Jekyll, using the official Jekyll theme implementation.
 
+[<img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" width="217"/>](https://buymeacoffee.com/daviddarnes#support)
+
 ![Screenshot](https://raw.githubusercontent.com/daviddarnes/garth/master/screenshot.png)
 
 ## Contents
