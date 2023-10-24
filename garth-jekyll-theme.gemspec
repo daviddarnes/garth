@@ -17,6 +17,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", ">= 3.6", "< 5.0"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
+  spec.add_runtime_dependency "jektex", "~> 0.1.1"
 
   spec.add_development_dependency "bundler", ">= 1.14", "< 3.0"
 end
