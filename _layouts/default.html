@@ -11,7 +11,9 @@
 			<title>{{ site.title }}</title>
 		{% endif %}
 
-		<link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+		<link rel="stylesheet" href="{{- '/assets/styles.css' | relative_url -}}">
+		<link rel="stylesheet" href="{{- '/assets/katex/katex.min.css' | relative_url -}}">
+
 
 		{% if site.favicon %}
 			<link rel="shortcut icon" href="{{ site.favicon }}">
