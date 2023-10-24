@@ -22,6 +22,7 @@ exclude:
 # 2. Installed Gems
 plugins:
 - jekyll-paginate
+- jektex
 
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
@@ -33,6 +34,14 @@ sass:
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: Europe/London # Timezone for blog posts and alike
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
 
 # 5. Collections
 collections:
